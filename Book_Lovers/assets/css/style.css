@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative; 
+    font-family: "Poppins", sans-serif;
+    background: none; 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;   
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    background-image: url("../img/photobuku1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    filter: blur(4px);          
+    transform: scale(1.1);      
+    z-index: -1;                
+}
+
+main {
+    flex: 1;
+}
+
+.navbar-gradient {
+    background: linear-gradient(90deg, #d7a86e, #a87452, #6e4b3c);
+}
+
+.card-custom {
+    background-color: #fff8ef;
+    border: none;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+}
+
+.card-custom:hover {
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+}
+
+.footer {
+    background: #6e4b3c;
+    color: white;
+    padding: 14px 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+.btn-gold {
+    background-color: #d7a86e;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.btn-gold:hover {
+    background-color: #c9965a;
+}
+
+.form-control {
+    border-radius: 10px;
+    background: #fff;
+}
